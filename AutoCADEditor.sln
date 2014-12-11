@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchCAD", "AutoCADEditor\WatchCAD.csproj", "{E1E8E265-7DF5-4C3D-B3A7-5F58931D8267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchCADUnitTest", "UnitTestProject\WatchCADUnitTest.csproj", "{5957E4BE-18F4-4E4F-B621-D9CA388D0878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1E8E265-7DF5-4C3D-B3A7-5F58931D8267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E8E265-7DF5-4C3D-B3A7-5F58931D8267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E8E265-7DF5-4C3D-B3A7-5F58931D8267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E8E265-7DF5-4C3D-B3A7-5F58931D8267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5957E4BE-18F4-4E4F-B621-D9CA388D0878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5957E4BE-18F4-4E4F-B621-D9CA388D0878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5957E4BE-18F4-4E4F-B621-D9CA388D0878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5957E4BE-18F4-4E4F-B621-D9CA388D0878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

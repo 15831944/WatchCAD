@@ -1,0 +1,11 @@
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\accoremgd.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\acdbmgd.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\WatchCAD.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\WatchCAD.pdb
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\en-US\acdbmgd.resources.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\bin\Debug\ru-RU\acdbmgd.resources.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\obj\Debug\WatchCADUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Engus\Documents\Visual Studio 2013\Projects\AutoCADEditor\UnitTestProject\obj\Debug\UnitTestProject.pdb

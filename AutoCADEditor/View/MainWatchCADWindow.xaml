@@ -1,0 +1,129 @@
+﻿<Window x:Class="WatchCAD.View.MainWatchCADWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Model ="clr-namespace:WatchCAD.Model"
+        xmlns:View ="clr-namespace:WatchCAD.View"
+        xmlns:ViewModel="clr-namespace:WatchCAD.ViewModel"
+        Title="{Binding MainWindowTitle}" Height="500" Width="300">
+    <Grid Margin="0,0,0,0" >
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Label Content="Радиус корпуса" DockPanel.Dock="Top" Margin="1,0,0,1"/>
+            <Label Content="{Binding Path=WatchData.BodyDiameter, UpdateSourceTrigger = PropertyChanged}" 
+                   DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="70" 
+                    Minimum ="30" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="1" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding Path=WatchData.BodyDiameter, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="1" >
+            <Label Content="Высота корпуса" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.BodyHeight, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="20" 
+                    Minimum ="5" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="0.5" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.BodyHeight, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="2" >
+            <Label Content="Длина ушек корпуса" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.BootstrapLength, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="20" 
+                    Minimum ="5" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="0.5" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.BootstrapLength, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="3" >
+            <Label Content="Диаметр головки" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.CrownDiameter, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="8" 
+                    Minimum ="4" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="0.5" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.CrownDiameter, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="4" >
+            <Label Content="Высота головки" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.CrownHeight, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="6" 
+                    Minimum ="2" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="0.1" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.CrownHeight, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="5" >
+            <Label Content="Ширина ремешка" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.StrapWidth, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="50" 
+                    Minimum ="10" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="10" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.StrapWidth, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="6" >
+            <Label Content="Длина ремешка" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.StrapLength, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="500" 
+                    Minimum ="150" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="10" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.StrapLength, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="7" >
+            <Label Content="Количество перфораций" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.NumberOfPerforations, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="10" 
+                    Minimum ="1" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="1" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.NumberOfPerforations, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="8" >
+            <Label Content="Радиус перфорации" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <Label Content="{Binding WatchData.StrapPerforationRadius, UpdateSourceTrigger = PropertyChanged}" DockPanel.Dock="Right"  Width="40" />
+            <Slider Maximum="2" 
+                    Minimum ="0.2" 
+                    TickPlacement="BottomRight" 
+                    TickFrequency="0.1" 
+                    IsSnapToTickEnabled="True" 
+                    Value="{Binding WatchData.StrapPerforationRadius, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}" />
+        </DockPanel>
+        <DockPanel Grid.Row="9" >
+            <Label Content="Установить хронограф" DockPanel.Dock="Top" Margin="1,0,0,1" />
+            <CheckBox Content="Установить" Height="16" VerticalAlignment="Top" Margin="5,0,0,1" IsChecked="{Binding WatchData.HasChronograph, UpdateSourceTrigger = PropertyChanged, Mode=TwoWay}"/>
+        </DockPanel>
+
+        <Button Grid.Row="10"
+                Content="Построить" 
+                HorizontalAlignment="Left" 
+                Margin="10,11,0,0" 
+                VerticalAlignment="Top" 
+                Command="{Binding BuildCommand}"
+                Width="75"/>
+
+    </Grid>
+</Window>
+
